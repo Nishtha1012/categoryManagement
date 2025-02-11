@@ -11,6 +11,8 @@ app.use(cookieParser());
 
 app.use(router);
 
+app.get("/", (_req, res) => res.send("Category management"));
+
 connectDB();
 
 const PORT = process.env.PORT || 5000;
